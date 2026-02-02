@@ -15,9 +15,11 @@ osGetCount_recomp = 0x8F000028;
 osCreateMesgQueue_recomp = 0x8F00002C;
 osRecvMesg_recomp = 0x8F000030;
 osDpSetStatus_recomp = 0x8F000034;
+/*
 malloc_recomp = 0x8F000038;
 free_recomp = 0x8F00003C;
 realloc_recomp = 0x8F000040;
+*/
 recomp_register_object_extension = 0x8F000044;
 recomp_register_object_extension_generic = 0x8F000048;
 recomp_clear_all_object_data = 0x8F00004C;
@@ -38,7 +40,7 @@ recomp_get_target_aspect_ratio = 0x8F000084;
 osExQueueDisplaylistEvent_recomp = 0x8F000088;
 recomp_xxh3 = 0x8F00008C;
 recomp_get_bgm_volume = 0x8F000090;
-sinf_recomp = 0x8F000094;
+/* sinf_recomp = 0x8F000094; */
 __cosf_recomp = 0x8F000098;
 recomp_get_right_analog_inputs = 0x8F00009C;
 recomp_get_analog_cam_enabled = 0x8F0000A0;

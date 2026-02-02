@@ -369,20 +369,17 @@ gpr get_entrypoint_address();
 // array of supported GameEntry objects
 std::vector<recomp::GameEntry> supported_games = {
     {
-        .rom_hash = 0x1B67585D56E07F8CULL,
-        .internal_name = "Banjo-Kazooie",
-        .display_name = "Banjo-Kazooie",
-        .game_id = u8"bk.n64.us.1.0",
-        .mod_game_id = "bk",
+        .rom_hash = 0x38912ac86097bfec,
+        .internal_name = "SMASH BROTHERS     ",
+        .display_name = "Super Smash Brothers",
+        .game_id = u8"ssb.n64.us.1.0",
+        .mod_game_id = "ssb",
         // Eep16k instead of Eep4k to have room for extra save file data.
-        .save_type = recomp::SaveType::Eep16k,
+        .save_type = recomp::SaveType::Sram,
         .thumbnail_bytes = std::span<const char>(icon_bytes),
         .is_enabled = false,
-        .decompression_routine = banjo::decompress_bk,
-        .has_compressed_code = true,
         .entrypoint_address = get_entrypoint_address(),
         .entrypoint = recomp_entrypoint,
-        .on_init_callback = banjo::bk_on_init,
     },
 };
 

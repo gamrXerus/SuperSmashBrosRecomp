@@ -22,7 +22,6 @@ void osWriteBackDCacheAll(void);
 #define bzero bzero_recomp
 #define bcopy bcopy_recomp
 #define osDpSetStatus osDpSetStatus_recomp
-#define malloc malloc_recomp
 #define free free_recomp
 #define realloc realloc_recomp
 #define memcpy memcpy_recomp
@@ -35,9 +34,9 @@ void osWriteBackDCacheAll(void);
 #define osContGetReadData osContGetReadData_recomp
 
 #include "ultra64.h"
+#include "PR/os.h"
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wvisibility"
-#include "structs.h"
 #pragma GCC diagnostic pop
 #include "rt64_extended_gbi.h"
 
