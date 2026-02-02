@@ -10,3 +10,6 @@
 [submodule "lib/ssb-decomp-re"]
 	path = lib/ssb-decomp-re
 	url = https://github.com/sonicdcer/ssb-decomp-re.git
+[submodule "SuperSmashBrosRecompSyms"]
+	path = SuperSmashBrosRecompSyms
+	url = https://github.com/sonicdcer/SuperSmashBrosRecompSyms
