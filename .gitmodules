@@ -7,3 +7,6 @@
 [submodule "lib/rt64"]
 	path = lib/rt64
 	url = https://github.com/rt64/rt64.git
+[submodule "lib/ssb-decomp-re"]
+	path = lib/ssb-decomp-re
+	url = https://github.com/sonicdcer/ssb-decomp-re.git
