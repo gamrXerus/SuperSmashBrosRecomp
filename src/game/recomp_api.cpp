@@ -59,6 +59,17 @@ extern "C" void recomp_error(uint8_t* rdram, recomp_context* ctx) {
     ultramodern::error_handling::quick_exit(__FILE__, __LINE__, __FUNCTION__);
 }
 
+extern "C" void recomp_printf(uint8_t* rdram, recomp_context* ctx) {
+    PTR(char) fmt_str = _arg<0, PTR(char)>(rdram, ctx);
+    
+    std::string str{};
+    for (size_t i = 0; MEM_B(fmt_str, i) != '\x00'; i++) {
+        str += (char)MEM_B(fmt_str, i);
+    }
+    
+    printf("%s", str.c_str());
+}
+
 extern "C" void recomp_get_gyro_deltas(uint8_t* rdram, recomp_context* ctx) {
     float* x_out = _arg<0, float*>(rdram, ctx);
     float* y_out = _arg<1, float*>(rdram, ctx);
