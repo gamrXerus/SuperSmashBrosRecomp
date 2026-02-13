@@ -723,7 +723,8 @@ int main(int argc, char** argv) {
     // Register extensions for two types: Props and ActorMarkers.
     recomputil::init_extended_object_data(2);
 
-    recompinput::players::set_single_player_mode(true);
+    recompinput::players::set_single_player_mode(false);
+    recompinput::players::set_player_count_range(1, 4);
 
     banjo::init_config();
 
