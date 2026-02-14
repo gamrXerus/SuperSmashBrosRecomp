@@ -35,22 +35,15 @@ The other tool necessary will be `make` which can be installe via [Chocolatey](h
 choco install make
 ```
 
-## 3. Decompressing the target ROM
-You will need to decompress the NTSC-U 1.0 N64 Banjo-Kazooie ROM (sha1: d6133ace5afaa0882cf214cf88daba39e266c078) before running the recompiler.
 
-The most straightforward way to do this is to set up the [Banjo-Kazooie decompilation](https://gitlab.com/banjo.decomp/banjo-kazooie), which will decompress the ROM when building. Alternatively, you can run the [bk_rom_compressor tool](https://github.com/MittenzHugg/bk_rom_compressor) directly, which is what the decompilation uses to decompress the ROM.
-
-Regardless of which method you use, copy the decompressed ROM to the root of the BanjoRecomp repository with this filename:
-- `banjo.us.v10.decompressed.z64`
-
-## 4. Generating the C code
+## 3. Generating the C code
 
 Now that you have the required files, you must build [N64Recomp](https://github.com/N64Recomp/N64Recomp) and run it to generate the C code to be compiled. The building instructions can be found [here](https://github.com/N64Recomp/N64Recomp?tab=readme-ov-file#building). That will build the executables: `N64Recomp` and `RSPRecomp` which you should copy to the root of the BanjoRecomp repository.
 
 After that, go back to the repository root, and run the following commands:
 ```bash
-./N64Recomp banjo.us.rev0.toml
-./RSPRecomp n_aspMain.us.rev0.toml
+./N64Recomp smashbrothers.us.toml
+./RSPRecomp n_aspMain.us.toml
 ```
 
 ## 5. Building the Project
