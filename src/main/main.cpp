@@ -588,19 +588,6 @@ void on_launcher_init(recompui::LauncherMenu *menu) {
         }
     }
 
-    recompui::Element *menu_container = menu->get_menu_container();
-    menu_container->set_width(1440);
-    menu_container->unset_left();
-    menu_container->set_top(banjo::launcher_options_top_offset);
-    menu_container->set_bottom(-banjo::launcher_options_top_offset);
-    menu_container->set_right(50, recompui::Unit::Percent);
-    menu_container->set_translate_2D(50.0f, 0.0f, recompui::Unit::Percent);
-
-    game_options_menu->unset_left();
-    game_options_menu->set_bottom(50.0f, recompui::Unit::Percent);
-    game_options_menu->set_translate_2D(0.0f, 50.0f, recompui::Unit::Percent);
-    game_options_menu->set_right(banjo::launcher_options_right_position_start);
-
     menu->remove_default_title();
 
     banjo::launcher_animation_setup(menu);
@@ -729,7 +716,6 @@ int main(int argc, char** argv) {
     banjo::init_config();
 
     recompui::register_launcher_init_callback(on_launcher_init);
-    recompui::register_launcher_update_callback(banjo::launcher_animation_update);
 
     recomp::rsp::callbacks_t rsp_callbacks{
         .get_rsp_microcode = get_rsp_microcode,
