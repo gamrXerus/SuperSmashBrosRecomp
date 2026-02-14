@@ -1,5 +1,5 @@
 # Super Smash Bros: Recompiled
-Super Smash Bros: Recompiled is a project that uses [N64: Recompiled](https://github.com/N64Recomp/N64Recomp) to **statically recompile** Banjo-Kazooie into a native port with many new features, enhancements, and extensive mod support. This project uses [RT64](https://github.com/rt64/rt64) as the rendering engine to provide graphical enhancements.
+Super Smash Bros: Recompiled is a project that uses [N64: Recompiled](https://github.com/N64Recomp/N64Recomp) to **statically recompile** Super Smash Bros into a native port with many new features, enhancements, and extensive mod support. This project uses [RT64](https://github.com/rt64/rt64) as the rendering engine to provide graphical enhancements.
 
 ### [Check out the latest release here](https://github.com/BanjoRecomp/BanjoRecomp/releases/latest).
 
@@ -66,21 +66,9 @@ Any aspect ratio is supported, with all effects modded to work correctly in wide
 #### Mod Support
 Install community made mods and texture packs! Mods can change any part of the game, including adding completely new features and content. You can install mods by simply dragging the mod files onto the game window before starting the game or by clicking the **Install Mods** button in the mod menu. Mods can be toggled in the mod menu, and some mods can be configured there as well.
 
-A Thunderstore mod hosting page is currently being set up for this project. In the meantime, you can find the mods showcased in the release trailer here:
-
-* [BK Jiggies of Time](https://github.com/Mr-Wiseguy/JiggiesOfTimeRecomp/releases/latest)
-* [BK Nostalgia 64](https://github.com/Mr-Wiseguy/Nostalgia64Recomp/releases/latest)
-* [BK Reloaded Texture Pack](https://evilgames.eu/texture-packs/bk-reloaded.htm)
 
 If you're interested in making mods for this project, check out [the mod template](https://github.com/BanjoRecomp/BKRecompModTemplate) and [the modding documentation](https://hackmd.io/fMDiGEJ9TBSjomuZZOgzNg). If you're interested in making texture packs, check out [the RT64 documentation](https://github.com/rt64/rt64/blob/main/TEXTURE-PACKS.md). You can also join the [N64: Recompiled Modding Discord server](https://discord.gg/Z8Nbm455D4).
 
-#### Dual Analog Camera
-Play with a dual analog control for finer camera control! When this option is enabled, the right analog stick will control the camera. Buttons mapped to the right analog stick will still work while crouching, so you can keep the C-buttons mapped to it even when this setting is enabled.
-
-#### Note Saving
-Keep your notes when leaving a level or dying like in later releases of the game!
-
-This setting can be turned off to restore the N64 version's note score mechanic. Changing this setting will only take effect when returning to Grunty's Lair or restarting the game.
 
 #### Low Input Lag
 This project has been optimized to have as little input lag as possible, making the game feel more responsive than ever!
@@ -110,7 +98,7 @@ Unlike N64 ports in the past, this project is not based on the source code provi
 - macOS: `~/Library/Application Support/SuperSmashBrosRecompiled/saves`
 
 #### How do I choose a different ROM?
-**You don't.** This project is **only** a port of Banjo-Kazooie, and it will only accept one specific ROM: the US 1.0 version of the N64 release of Banjo-Kazooie. ROMs in formats other than .z64 will be automatically converted, as long as it is the correct ROM. **This is not an emulator, and it cannot run any arbitrary ROM.**
+**You don't.** This project is **only** a port of Super Smash Bros, and it will only accept one specific ROM: the US 1.0 version of the N64 release of Super Smash Bros. ROMs in formats other than .z64 will be automatically converted, as long as it is the correct ROM. **This is not an emulator, and it cannot run any arbitrary ROM.**
 
 Instead, you can change the game by installing mods. See the [mod support](#mod-support) section for details.
 
